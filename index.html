@@ -1,493 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Webpage Title -->
-    <title>Ashen Amantha</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashen's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/favicon.png" alt="alternative"></a>  
-
-        
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <a class="navbar-brand" href="#home">Ashen's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Services</a>
-                    </li>
-
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-info ms-lg-3" href="assets/cv.pdf" download>Download CV</a>
                     </li>
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://www.facebook.com/ashen.amantha.79?mibextid=LQQJ4d">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://wa.me/+94770186025">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-whatsapp fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
+        </div>
+    </nav>
 
-
-    <!-- Header -->
-    <header id="header" class="header">
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">" Bsc (Hons) Information technology Undergraduate "</h1>
-                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                    <h1>Cybersecurity Professional</h1>
+                    <p class="lead">Specializing in vulnerability assessment, ethical hacking, and security analysis</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary me-3 scroll-link">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline-secondary scroll-link">View My Work</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/cybersecurity.png" alt="Cybersecurity Illustration" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
+    <!-- About Section -->
+    <section id="about" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi there I'm Ashen,</h2>
-                        <p>An undergraduate cybersecurity enthusiast with a passion for turning ideas into innovative solutions. Currently pursuing my degree in Information Technology Specializing in CyberSecurity , I thrive on challenges that push the boundaries of what technology can achieve.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2023 - PRESENT</div>
-                        <h6>Freelance Web Developer/ Graphic Designer/CTF Player</h6>
-                        <p>Working happily on my own web projects / University Projects/Diving into ethical hacking</p>
-                        <div class="time">2020 - 2023</div>
-                        <h6>Advanced Level Student</h6>
-                        <p>Completed in fully English Medium & Obtained B C C passes in Physical Science Stream </p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2019 - 2020</div>
-                        <h6>Ordinary Level Student</h6>
-                        <p>Completed in Fully English Medium & Obtained 9A passes for all the Subjects </p>
-                        <div class="time">2018 - 2019</div>
-                        <h6>Graphic Designing Student </h6>
-                        <p>Designing Logos,Flyers,Banners for my own projects </p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
-
-
-    <!-- Services -->
-    <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Offered services</h2>
-                    <p class="p-heading">Web designing/Development & Graphic Designing have been my bread and butter for more than 3 years. During that time I've discovered that I can help startups and companies with the following services</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DESIGN</h4>
-                        <p>Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4>DEVELOPMENT</h4>
-                        <p>I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>BASIC SEO</h4>
-                        <p>i can setup your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of services -->
-
-
-    <!-- Details -->
-	<div class="split">
-		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row">
-                    <div class="col-lg-12">     
-                        
-                        <!-- Text Container -->
-                        <div class="text-container">
-                            <h2>Why Work With Me</h2>
-                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
-                            <h5>DESIGN TOOLS</h5>
-                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
-                            
-                            <div class="icons-container">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-illustrator.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                                <img src="images/details-icon-java.png" alt="alternative">
-                                <img src="images/details-icon-c.png" alt="alternative">
-                                <img src="images/details-icon-c++.png" alt="alternative">
-                            </div> <!-- end of icons-container -->
-                        </div> <!-- end of text-container -->
-                        <!-- end of text container -->
-
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of split -->
-    <!-- end of details -->
-
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Delivered projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://ashenamantha122.github.io/colorscapedemo.github.io/">
-                                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Colorscape IT Solutions, <strong>Project:</strong> web design for their corporate websites and landing pages for marketing campaigns <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://colorscape.github.io">
-                                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Colorscape IT Solutions , <strong>Project:</strong> designed and developed using HTML5 , CSS, JS <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                   
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
-
-
-    <!-- Works -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            
-                                <img class="img-fluid" src="images/work-1.png" alt="alternative">
-                            
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Startups, <strong>Project:</strong> Logo Designing <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            
-                                <img class="img-fluid" src="images/work-5.jpg" alt="alternative">
-                            
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Colorscape, <strong>Project:</strong> Flyer Design <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            
-                                <img class="img-fluid" src="images/work-7.jpg" alt="alternative">
-                            
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Colorscape, <strong>Project:</strong> Flyer Design <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            
-                                <img class="img-fluid" src="images/work-6.jpg" alt="alternative">
-                            
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Colorscape, <strong>Project:</strong> Flyer Design  <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            
-                                <img class="img-fluid" src="images/work-4.png" alt="alternative">
-                            
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Freelance, <strong>Project:</strong> Logo Design for the e-commerce website <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of works -->
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-
-    <!-- Questions -->
-    <div class="accordion-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Frequent questions</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How can I contact you and quickly get a quote for my online project?
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do you create designs from the ground up or you are using themes?
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Will I receive any included maintenance or warranty after project delivery?
-                                </button>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    If something goes wrong with the project can I have my money back?
-                                </button>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    What's your preferred method of payment and do you need an advance?
-                                </button>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end of accordion -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of accordion-1 -->
-    <!-- end of questions -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="mailto:ashenamantha122@gmail.com">ashenamantha122@gmail.com</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <hr class="section-hr">
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="assets/profile.jpg" alt="Profile Picture" class="img-fluid rounded about-image">
+                </div>
+                <div class="col-lg-7">
+                    <h3>Aspiring Cybersecurity Professional</h3>
+                    <p class="lead">Passionate about information security, ethical hacking, and digital forensics.</p>
+                    <p>I am a cybersecurity Undergraduate with a strong foundation in network security, penetration testing, and security analysis. My goal is to help organizations protect their digital assets against evolving cyber threats.</p>
                     
-                    <!-- Contact Form -->
-                    <form action="https://formsubmit.co/ashenamantha122@gmail.com" method="POST">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Technical Skills</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Network Security</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Penetration Testing</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Vulnerability Assessment</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Security Analysis</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Bug Bounty Hunting</li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                        <div class="col-md-6">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Kali Linux</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Metasploit</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Wireshark</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Burp Suite</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> NMAP</li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Type your message here</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Career Goals</h4>
+                        <p>I aim to become a certified ethical hacker and eventually work as a security consultant, helping businesses identify and mitigate security vulnerabilities before they can be exploited.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Services</h2>
+                    <hr class="section-hr">
+                    <p class="section-subtitle">Specialized cybersecurity services I can provide</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Vulnerability Assessment</h4>
+                            <p class="card-text">Comprehensive scanning and assessment of systems and networks to identify potential security vulnerabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Ethical Hacking</h4>
+                            <p class="card-text">Authorized simulated attacks to evaluate security posture and identify potential entry points for malicious actors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Security Analysis</h4>
+                            <p class="card-text">Comprehensive analysis of security controls, policies, and procedures to ensure best practices are being followed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Secure Coding Review</h4>
+                            <p class="card-text">Analysis of application code to identify security flaws and potential vulnerabilities in software development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Network Security</h4>
+                            <p class="card-text">Implementation and configuration of network security measures to protect against unauthorized access and attacks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4 class="card-title mt-4">Security Training</h4>
+                            <p class="card-text">Educational sessions on cybersecurity awareness and best practices for organizations and individuals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Certifications</h2>
+                    <hr class="section-hr">
+                    <p class="section-subtitle">Professional certifications and achievements</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/comptia.jpg" class="card-img-top" alt="CompTIA Security+">
+                        <div class="card-body">
+                            <h5 class="card-title">CyberOps Associate B1</h5>
+                            <p class="card-text">Fundamental certification covering essential security principles and best practices.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: May 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/cisco.jpg" class="card-img-top" alt="Cisco CCNA Security">
+                        <div class="card-body">
+                            <h5 class="card-title">Cisco CCNA </h5>
+                            <p class="card-text">Implementation of network security solutions and practices.(reading)</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: April 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/ethical hacker 2.jpg" class="card-img-top" alt="HackTheBox">
+                        <div class="card-body">
+                            <h5 class="card-title"> Cisco Verified Ethical Hacker</h5>
+                            <p class="card-text">Practical ethical hacking skills through platform challenges.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: March 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/tryhackme.jpg" class="card-img-top" alt="TryHackMe">
+                        <div class="card-body">
+                            <h5 class="card-title">TryHackMe Certified</h5>
+                            <p class="card-text">Hands-on cybersecurity training through practical labs.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: January 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/ics2_page-0001.jpg" class="card-img-top" alt="TryHackMe">
+                        <div class="card-body">
+                            <h5 class="card-title">Certified in Cybersecurity ISC2</h5>
+                            <p class="card-text">Foundational Cybersecurity Certification with core main cybersecurity principles</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: January 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/networking_page-0001.jpg" class="card-img-top" alt="TryHackMe">
+                        <div class="card-body">
+                            <h5 class="card-title">Cisco Networking Basics</h5>
+                            <p class="card-text">Introduction to Networking through practical labs.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: January 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/tryhackme.jpg" class="card-img-top" alt="TryHackMe">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Cyber Crime</h5>
+                            <p class="card-text">Hands-on cybersecurity training through practical labs.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: January 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card cert-card h-100">
+                        <img src="assets/ics_page-0001.jpg" class="card-img-top" alt="TryHackMe">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Cybersecurity</h5>
+                            <p class="card-text">Hands-on cybersecurity training through practical labs.</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt me-2"></i> Achieved: January 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Projects</h2>
+                    <hr class="section-hr">
+                    <p class="section-subtitle">Showcasing my cybersecurity work and research</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/portscan.png" class="card-img-top" alt="Network Vulnerability Scanner">
+                        <div class="card-body">
+                            <h5 class="card-title">Network Port Scanner</h5>
+                            <p class="card-text">Developed a Python-based tool to scan networks for common vulnerabilities and misconfigurations.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Nmap</span>
+                                <span class="badge bg-info">Network Security</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/port_scanner_gui.py" download class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/portscannerFORwindows" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/ceaser.png" class="card-img-top" alt="IoT Security Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Caesar Cipher Tool</h5>
+                            <p class="card-text">A modern implementation of the classic Caesar Cipher encryption algorithm with an intuitive graphical user interface.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Security Research</span>
+                                <span class="badge bg-info">Cryptography</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/python enhanced_caesar_cipher_gui.py" download class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/PRODIGY_CS_01" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/imgencr.png" class="card-img-top" alt="Web Application Firewall">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Encryption Tool</h5>
+                            <p class="card-text">This tool implements image encryption and decryption using pixel manipulation techniques.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Security Research</span>
+                                <span class="badge bg-info">Steganography</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/image_encryption_tool2.py" download class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/PRODIGY_CS_02" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/passwordcomplex.png" class="card-img-top" alt="Phishing Detection System">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Complexity Checker</h5>
+                            <p class="card-text">This tool assesses the strength of passwords based on multiple security criteria.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Security Research</span>
+                                <span class="badge bg-info">Data Breech</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/Fixed_password_complexity_checker.py" download class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/PRODIGY_CS_03" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/keylogger.png" class="card-img-top" alt="Secure Password Manager">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethical Keylogger</h5>
+                            <p class="card-text">This tool demonstrates how keyloggers function as a cybersecurity awareness application.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Ethicak Hacking</span>
+                                <span class="badge bg-info">Educational</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/ethical_keylogger2.py" download class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/PRODIGY_CS_04" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/packetanalyzer.png" class="card-img-top" alt="Network Traffic Analyzer">
+                        <div class="card-body">
+                            <h5 class="card-title">Network Packter Analyzer</h5>
+                            <p class="card-text">This educational packet sniffer tool captures and analyzes network traffic.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Wireshark</span>
+                                <span class="badge bg-info">Data Analysis</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="assets/packet_analyzer.py" class="btn btn-outline-primary">Download</a>
+                            <a href="https://github.com/ashenamantha/PRODIGY_CS_05" class="btn btn-outline-secondary ms-2"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <hr class="section-hr">
+                    <p class="section-subtitle">Interested in working together? Send me a message!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <h4>Contact Information</h4>
+                        <p>Feel free to reach out if you're looking for a cybersecurity intern, have questions about my projects, or want to discuss potential collaborations.</p>
+                        
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p class="mb-0">ashenamantha122@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone</h5>
+                                <p class="mb-0">(+94) 785679446</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Location</h5>
+                                <p class="mb-0">Peliyagoda , Sri Lanka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="www.linkedin.com/in/ashen-amantha" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ashenamantha" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://wa.me/+94770186025" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/ashen.nnn_?igsh=MXExb3ZuYTJnZmN2bQ%3D%3D&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form">
+    <form id="contactForm" action="https://formspree.io/f/mbloqrqo" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer bg-gray">
+    <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="https://www.facebook.com/ashen.amantha.79?mibextid=LQQJ4d">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/ashen-amantha-127979252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/ashen.nnn_?igsh=MXExb3ZuYTJnZmN2bQ%3D%3D&utm_source=qr">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://wa.me/+94770186025">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-whatsapp fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://t.me/alphaknight111">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-telegram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Ashen's Portfolio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#home" class="text-white scroll-link">Back to Top <i class="fas fa-arrow-up ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#index">ASHEN AMANTHA</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
